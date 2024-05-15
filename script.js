@@ -126,8 +126,7 @@ if (!fs.existsSync(outputDir)) {
 
 // Process each guest in the JSON data
 (async () => {
-    // for (let i = 0; i < jsonData.length; i++) {
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < jsonData.length; i++) {
         await generateNameCard(jsonData[i], i);
     }
     console.log('All name cards have been generated.');
